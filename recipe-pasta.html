@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creamy Garlic Pasta Recipe - DesiEats</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    
+    <header class="header">
+        <nav class="nav">
+            <a href="index.html" class="nav-brand" style="text-decoration: none;">
+                <img src="https://cdn-icons-png.flaticon.com/512/3595/3595458.png" alt="DesiEats Logo" class="logo-img">
+                <span class="brand-name">DesiEats</span>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <div class="nav-links desktop-nav">
+                <a href="index.html" class="nav-link">Home</a>
+                
+                    <a href="recipes-all.html" class="nav-link">Recipes</a>
+                    
+                
+                <div class="nav-item-dropdown">
+                <a href="recipes-all.html" class="nav-link">Categories</a>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-link">By Cuisine</a>
+                        <a href="#" class="dropdown-link">By Course</a>
+                        <a href="#" class="dropdown-link">By Ingredient</a>
+                        <a href="#" class="dropdown-link">Latest Recipes</a>
+                    </div>
+                </div>
+                <a href="blog.html" class="nav-link">Blog</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+
+            <!-- Desktop Actions -->
+            <div class="nav-actions desktop-nav">
+                <div id="guest-actions">
+                    <a href="login.html" class="btn btn-ghost">Login</a>
+                    <a href="signup.html" class="btn btn-outline">Sign Up</a>
+                </div>
+                <div id="user-actions" class="hidden">
+                    <a href="profile.html" class="btn btn-ghost">Profile</a>
+                    <button id="logoutButton" class="btn btn-outline">Logout</button>
+                </div>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <div class="mobile-menu-btn">
+                <button class="btn btn-ghost btn-icon" id="mobileMenuToggle">
+                    <svg class="menu-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+                    <svg class="close-icon hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Mobile Navigation -->
+        <div class="mobile-nav hidden" id="mobileNav">
+            <div class="mobile-nav-content">
+                <a href="index.html" class="mobile-nav-link">Home</a>
+                <a href="recipes-all.html" class="mobile-nav-link">Recipes</a>
+                <a href="recipes-all.html" class="mobile-nav-link">Categories</a>
+                <a href="blog.html" class="mobile-nav-link">Blog</a>
+                <a href="about.html" class="mobile-nav-link">About Us</a>
+                <a href="contact.html" class="mobile-nav-link">Contact</a>
+                <div class="mobile-nav-actions">
+                    <div id="mobile-guest-actions">
+                        <a href="login.html" class="btn btn-ghost btn-full">Login</a>
+                        <a href="signup.html" class="btn btn-outline btn-full">Sign Up</a>
+                    </div>
+                    <div id="mobile-user-actions" class="hidden">
+                        <a href="profile.html" class="btn btn-ghost btn-full">Profile</a>
+                        <button id="mobileLogoutButton" class="btn btn-outline btn-full">Logout</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="recipe-page-container">
+            <!-- Recipe Header -->
+            <section class="recipe-page-header">
+                <h1 class="recipe-page-title">Creamy Garlic Pasta</h1>
+                <p class="recipe-page-description">A rich and decadent pasta dish that comes together in under 30 minutes. Perfect for a weeknight dinner or a special occasion.</p>
+                <div class="recipe-page-meta">
+                    <div class="meta-item">
+                        <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+                        <span>Easy</span>
+                    </div>
+                    <div class="meta-item">
+                        <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><polyline points="12,6 12,12 16,14"></polyline></svg>
+                        <span>25 mins</span>
+                    </div>
+                    <div class="meta-item">
+                        <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                        <span>4 Servings</span>
+                    </div>
+                </div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqw90IkMRPjvDYcxMWXyn70CKepmvYc3ow-Q&s" alt="Creamy Garlic Pasta" class="recipe-page-image">
+            </section>
+
+            <!-- Recipe Body -->
+            <section class="recipe-page-body">
+                <div class="recipe-ingredients">
+                    <h2 class="recipe-section-title">Ingredients</h2>
+                    <ul>
+                        <li>1 lb (450g) Fettuccine or your favorite pasta</li>
+                        <li>2 tbsp Butter</li>
+                        <li>5 cloves Garlic, minced</li>
+                        <li>1 cup Heavy Cream</li>
+                        <li>1 cup grated Parmesan Cheese</li>
+                        <li>1/2 tsp Black Pepper, freshly ground</li>
+                        <li>1/4 cup fresh Parsley, chopped</li>
+                        <li>Salt to taste</li>
+                        <li>Pasta water, as needed</li>
+                    </ul>
+                </div>
+                <div class="recipe-instructions">
+                    <h2 class="recipe-section-title">Instructions</h2>
+                    <ol>
+                        <li>Cook pasta according to package directions. Just before draining, reserve 1 cup of the starchy pasta water.</li>
+                        <li>While the pasta is cooking, melt butter in a large skillet or pan over medium heat. Add the minced garlic and cook until fragrant, about 1-2 minutes. Be careful not to burn it.</li>
+                        <li>Slowly pour in the heavy cream and bring to a gentle simmer. Let it cook for 2-3 minutes, allowing it to thicken slightly.</li>
+                        <li>Reduce heat to low and stir in the grated Parmesan cheese until the sauce is smooth and creamy. Season with salt and pepper.</li>
+                        <li>Add the drained pasta to the skillet with the sauce. Toss to combine, ensuring every strand is coated. If the sauce is too thick, add a splash of the reserved pasta water until it reaches your desired consistency.</li>
+                        <li>Stir in the fresh parsley. Serve immediately, garnished with extra Parmesan cheese if desired.</li>
+                    </ol>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo-wrapper">
+                        <img src="https://cdn-icons-png.flaticon.com/512/3595/3595458.png" alt="DesiEats Logo" class="logo-img">
+                        <span class="footer-brand-name">DesiEats</span>
+                    </div>
+                    <p class="footer-description">Your ultimate destination for discovering delicious recipes from around the world. Cook with confidence, share with love.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook"><svg class="social-icon" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+                        <a href="#" class="social-link" aria-label="Instagram"><svg class="social-icon" fill="currentColor" viewBox="0 0 24 24"><path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 6.62 5.367 11.987 11.988 11.987c6.62 0 11.987-5.367 11.987-11.987C24.004 5.367 18.637.001 12.017.001zM8.449 16.988c-1.297 0-2.348-1.051-2.348-2.348s1.051-2.348 2.348-2.348 2.348 1.051 2.348 2.348S9.746 16.988 8.449 16.988zM12.017 16.988c-1.297 0-2.348-1.051-2.348-2.348s1.051-2.348 2.348-2.348 2.348 1.051 2.348 2.348S13.314 16.988 12.017 16.988zM15.585 16.988c-1.297 0-2.348-1.051-2.348-2.348s1.051-2.348 2.348-2.348 2.348 1.051 2.348 2.348S16.882 16.988 15.585 16.988z"/></svg></a>
+                        <a href="#" class="social-link" aria-label="YouTube"><svg class="social-icon" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a>
+                        <a href="#" class="social-link" aria-label="Twitter"><svg class="social-icon" fill="currentColor" viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-column-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html" class="footer-link">Home</a></li>
+                        <li><a href="recipes-all.html" class="footer-link">Recipes</a></li>
+                        <li><a href="recipes-all.html" class="footer-link">Categories</a></li>
+                        <li><a href="blog.html" class="footer-link">Blog</a></li>
+                        <li><a href="about.html" class="footer-link">About</a></li>
+                        <li><a href="contact.html" class="footer-link">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-column-title">Support</h3>
+                    <ul class="footer-links">
+                        <li><a href="contact.html" class="footer-link">Help Center</a></li>
+                        <li><a href="privacy.html" class="footer-link">Privacy Policy</a></li>
+                        <li><a href="privacy.html" class="footer-link">Terms of Service</a></li>
+                        <li><a href="cookie.html" class="footer-link">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copyright">© 2025 DesiEats. All Rights Reserved. Made with ❤️ for food lovers everywhere.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="auth.js"></script>
+</body>
+</html>

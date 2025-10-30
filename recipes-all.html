@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Recipes - DesiEats</title>
+    <link rel="stylesheet" href="styles.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <a href="index.html" class="nav-brand" style="text-decoration: none;">
+                <img src="https://cdn-icons-png.flaticon.com/512/3595/3595458.png" alt="DesiEats Logo" class="logo-img">
+                <span class="brand-name">DesiEats</span>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <div class="nav-links desktop-nav">
+                <a href="index.html" class="nav-link">Home</a>
+                
+                    <a href="recipes-all.html" class="nav-link">Recipes</a>
+                    
+                
+                <div class="nav-item-dropdown">
+                <a href="recipes-all.html" class="nav-link">Categories</a>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-link">By Cuisine</a>
+                        <a href="#" class="dropdown-link">By Course</a>
+                        <a href="#" class="dropdown-link">By Ingredient</a>
+                        <a href="#" class="dropdown-link">Latest Recipes</a>
+                    </div>
+                </div>
+                <a href="blog.html" class="nav-link">Blog</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+
+            <!-- Desktop Actions -->
+            <div class="nav-actions desktop-nav">
+                <div id="guest-actions">
+                    <a href="login.html" class="btn btn-ghost">Login</a>
+                    <a href="signup.html" class="btn btn-outline">Sign Up</a>
+                </div>
+                <div id="user-actions" class="hidden">
+                    <a href="profile.html" class="btn btn-ghost">Profile</a>
+                    <button id="logoutButton" class="btn btn-outline">Logout</button>
+                </div>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <div class="mobile-menu-btn">
+                <button class="btn btn-ghost btn-icon" id="mobileMenuToggle">
+                    <svg class="menu-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+                    <svg class="close-icon hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Mobile Navigation -->
+        <div class="mobile-nav hidden" id="mobileNav">
+            <div class="mobile-nav-content">
+                <a href="index.html" class="mobile-nav-link">Home</a>
+                <a href="recipes-all.html" class="mobile-nav-link">Recipes</a>
+                <a href="recipes-all.html" class="mobile-nav-link">Categories</a>
+                <a href="blog.html" class="mobile-nav-link">Blog</a>
+                <a href="about.html" class="mobile-nav-link">About Us</a>
+                <a href="contact.html" class="mobile-nav-link">Contact</a>
+                <div class="mobile-nav-actions">
+                    <div id="mobile-guest-actions">
+                        <a href="login.html" class="btn btn-ghost btn-full">Login</a>
+                        <a href="signup.html" class="btn btn-outline btn-full">Sign Up</a>
+                    </div>
+                    <div id="mobile-user-actions" class="hidden">
+                        <a href="profile.html" class="btn btn-ghost btn-full">Profile</a>
+                        <button id="mobileLogoutButton" class="btn btn-outline btn-full">Logout</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="recipes-all-section container">
+          <section class="page-hero">
+            <div class="container">
+                <h1 class="page-hero-title">Explore All Our Delicious Recipes</h1>
+                <p class="page-hero-subtitle">Browse through a world of flavors, from traditional classics to modern favorites.</p>
+            </div>
+        </section>
+           <div class="category-section">
+  <h2 class="category-title">Indian Cuisine</h2>
+  <div class="recipes-list-horizontal">
+
+    <!-- Butter Chicken -->
+    <a href="recipe-butter-chicken.html" class="recipe-card" data-recipe-id="butter-chicken" data-recipe-url="recipe-butter-chicken.html">
+      <img src="https://nickskitchen.com/wp-content/uploads/2025/08/NK_Butter-Ckn_1-500x500.jpg" alt="Butter Chicken" class="recipe-card-img">
+
+      <button class="bookmark-btn" aria-label="Bookmark this recipe">
+        <i class="fas fa-heart outline-icon"></i>
+        <i class="fas fa-heart filled-icon"></i>
+      </button>
+
+      <div class="recipe-card-content">
+        <h3 class="recipe-title">Butter Chicken</h3>
+        <p class="recipe-description">A rich and creamy Indian curry with tender chicken pieces.</p>
+      </div>
+    </a>
+
+    <!-- Chicken Biryani -->
+    <a href="recipe-biryani.html" class="recipe-card" data-recipe-id="chicken-biryani" data-recipe-url="recipe-biryani.html">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlPQXFO4B201Ry8o7_Soa7dwhJBrtcwJdE0w&s" 
+       alt="Chicken Biryani" class="recipe-card-img">
+
+  <button class="bookmark-btn" aria-label="Bookmark this recipe">
+    <i class="fas fa-heart outline-icon"></i>
+    <i class="fas fa-heart filled-icon"></i>
+  </button>
+
+  <div class="recipe-card-content">
+    <h3 class="recipe-title">Chicken Biryani</h3>
+    <p class="recipe-description">Fragrant basmati rice layered with spiced chicken and herbs.</p>
+  </div>
+</a>
+
+
+    <a href="recipe-dal-makhani.html" class="recipe-card" data-recipe-id="dal-makhani" data-recipe-url="recipe-dal-makhani.html">
+  <img src="https://www.thecuriouschickpea.com/wp-content/uploads/2018/10/dal-makhani-1.jpg.webp" 
+       alt="Dal Makhani" class="recipe-card-img">
+
+  <button class="bookmark-btn" aria-label="Bookmark this recipe">
+    <i class="fas fa-heart outline-icon"></i>
+    <i class="fas fa-heart filled-icon"></i>
+  </button>
+
+  <div class="recipe-card-content">
+    <h3 class="recipe-title">Dal Makhani</h3>
+    <p class="recipe-description">Slow-cooked black lentils and kidney beans in a creamy, buttery gravy.</p>
+  </div>
+</a>
+
+
+   <!-- Palak Paneer -->
+<a href="recipe-palak-paneer.html" class="recipe-card" data-recipe-id="palak-paneer" data-recipe-url="recipe-palak-paneer.html">
+  <img src="https://www.cookwithmanali.com/wp-content/uploads/2019/08/Palak-Paneer-500x375.jpg" 
+       alt="Palak Paneer" class="recipe-card-img">
+
+  <button class="bookmark-btn" aria-label="Bookmark this recipe">
+    <i class="fas fa-heart outline-icon"></i>
+    <i class="fas fa-heart filled-icon"></i>
+  </button>
+
+  <div class="recipe-card-content">
+    <h3 class="recipe-title">Palak Paneer</h3>
+    <p class="recipe-description">Indian cottage cheese cubes in a smooth, spiced spinach puree.</p>
+  </div>
+</a>
+
+
+    
+    <!-- Vegetable Samosa -->
+<a href="recipe-vegetable-samosa.html" class="recipe-card" data-recipe-id="vegetable-samosa" data-recipe-url="recipe-vegetable-samosa.html">
+  <img src="https://www.cubesnjuliennes.com/wp-content/uploads/2020/08/Best-Indian-Punjabi-Samosa-Recipe-500x500.jpg" 
+       alt="Vegetable Samosa" class="recipe-card-img">
+
+  <button class="bookmark-btn" aria-label="Bookmark this recipe">
+    <i class="fas fa-heart outline-icon"></i>
+    <i class="fas fa-heart filled-icon"></i>
+  </button>
+
+  <div class="recipe-card-content">
+    <h3 class="recipe-title">Vegetable Samosa</h3>
+    <p class="recipe-description">Crispy fried pastry filled with spiced potatoes and peas.</p>
+  </div>
+</a>
+
+</div>
+
+
+            <div class="category-section">
+  <h2 class="category-title">Gluten-Free</h2>
+  <div class="recipes-list-horizontal">
+
+    <!-- Mediterranean Quinoa Salad -->
+<a href="recipe-mediterranean-quinoa-salad.html" class="recipe-card" data-recipe-id="mediterranean-quinoa-salad" data-recipe-url="recipe-mediterranean-quinoa-salad.html">
+  <img src="https://jamiecooksitup.net/wp-content/uploads/2024/06/Mediteranean-Quino-Salad.jpg" 
+       alt="Mediterranean Quinoa Salad" class="recipe-card-img">
+
+  <button class="bookmark-btn" aria-label="Bookmark this recipe">
+    <i class="fas fa-heart outline-icon"></i>
+    <i class="fas fa-heart filled-icon"></i>
+  </button>
+
+  <div class="recipe-card-content">
+    <h3 class="recipe-title">Mediterranean Quinoa Salad</h3>
+    <p class="recipe-description">A light and refreshing salad with quinoa, fresh vegetables, and a lemon dressing.</p>
+  </div>
+</a>
+
+
+    <!-- Hearty Red Lentil Soup -->
+    <a href="recipe-hearty-red-lentil-soup.html" class="recipe-card" data-recipe-id="hearty-red-lentil-soup" data-recipe-url="recipe-hearty-red-lentil-soup.html">
+  <img src="https://www.unicornsinthekitchen.com/wp-content/uploads/2022/09/Moroccan-style-red-lentil-soup-sq.jpg" 
+       alt="Hearty Red Lentil Soup" class="recipe-card-img">
+
+  <button class="bookmark-btn" aria-label="Bookmark this recipe">
+    <i class="fas fa-heart outline-icon"></i>
+    <i class="fas fa-heart filled-icon"></i>
+  </button>
+
+  <div class="recipe-card-content">
+    <h3 class="recipe-title">Hearty Red Lentil Soup</h3>
+    <p class="recipe-description">A warming and nutrient-rich soup perfect for a cozy meal.</p>
+  </div>
+</a>
+
+<!-- Fluffy Almond Flour Pancakes -->
+<a href="recipe-fluffy-almond-flour-pancakes.html" class="recipe-card" data-recipe-id="fluffy-almond-flour-pancakes" data-recipe-url="recipe-fluffy-almond-flour-pancakes.html">
+  <img src="https://thebigmansworld.com/wp-content/uploads/2022/07/almond-flour-pancakes-recipe.jpg" 
+       alt="Fluffy Almond Flour Pancakes" class="recipe-card-img">
+
+  <button class="bookmark-btn" aria-label="Bookmark this recipe">
+    <i class="fas fa-heart outline-icon"></i>
+    <i class="fas fa-heart filled-icon"></i>
+  </button>
+
+  <div class="recipe-card-content">
+    <h3 class="recipe-title">Fluffy Almond Flour Pancakes</h3>
+    <p class="recipe-description">Gluten-free pancakes that are light, fluffy, and delicious.</p>
+  </div>
+</a>
+
+
+    <!-- Zucchini Noodles with Pesto -->
+    <a href="recipe-zucchini-noodles-pesto.html" class="recipe-card" data-recipe-id="zucchini-noodles-pesto" data-recipe-url="recipe-zucchini-noodles-pesto.html">
+  <img src="https://cookieandkate.com/images/2016/06/zoodles-with-pesto-and-tomatoes.jpg" 
+       alt="Zucchini Noodles with Pesto" class="recipe-card-img">
+
+  <button class="bookmark-btn" aria-label="Bookmark this recipe">
+    <i class="fas fa-heart outline-icon"></i>
+    <i class="fas fa-heart filled-icon"></i>
+  </button>
+
+  <div class="recipe-card-content">
+    <h3 class="recipe-title">Zucchini Noodles with Pesto</h3>
+    <p class="recipe-description">A fresh, light, and healthy alternative to traditional pasta.</p>
+  </div>
+</a>
+
+</div>
+
+
+           <div class="category-section"> 
+  <h2 class="category-title">Low Carbs</h2>
+  <div class="recipes-list-horizontal">
+
+    <!-- Grilled Salmon -->
+    <a href="recipe-grilled-salmon-asparagus.html" class="recipe-card" data-recipe-id="grilled-salmon-asparagus" data-recipe-url="recipe-grilled-salmon-asparagus.html">
+  <img src="https://seafoodbysykes.com/wp-content/uploads/51804-Grilled-Salmon-and-Asparagus-with-Spicy-Rice.jpg" 
+       alt="Grilled Salmon with Asparagus" class="recipe-card-img">
+
+  <button class="bookmark-btn" aria-label="Bookmark this recipe">
+    <i class="fas fa-heart outline-icon"></i>
+    <i class="fas fa-heart filled-icon"></i>
+  </button>
+
+  <div class="recipe-card-content">
+    <h3 class="recipe-title">Grilled Salmon with Asparagus</h3>
+    <p class="recipe-description">A simple, healthy, and low-carb meal packed with Omega-3s.</p>
+  </div>
+</a>
+
+<!-- Stuffed Bell Peppers -->
+<a href="recipe-keto-stuffed-bell-peppers.html" class="recipe-card" data-recipe-id="keto-stuffed-bell-peppers" data-recipe-url="recipe-keto-stuffed-bell-peppers.html">
+  <img src="https://www.resolutioneats.com/wp-content/uploads/2019/10/Keto-Stuffed-Peppers-Hero.jpg" 
+       alt="Keto Stuffed Bell Peppers" class="recipe-card-img">
+
+  <button class="bookmark-btn" aria-label="Bookmark this recipe">
+    <i class="fas fa-heart outline-icon"></i>
+    <i class="fas fa-heart filled-icon"></i>
+  </button>
+
+  <div class="recipe-card-content">
+    <h3 class="recipe-title">Keto Stuffed Bell Peppers</h3>
+    <p class="recipe-description">Bell peppers filled with spiced ground meat and cheese, baked to perfection.</p>
+  </div>
+</a>
+
+<!-- Cauliflower Pizza -->
+<a href="recipe-cauliflower-pizza.html" class="recipe-card" data-recipe-id="cauliflower-pizza" data-recipe-url="recipe-cauliflower-pizza.html">
+  <img src="https://www.slenderkitchen.com/sites/default/files/styles/gsd-16x9/public/recipe_images/cauliflower-crust-pizza.jpg" 
+       alt="Cauliflower Crust Pizza" class="recipe-card-img">
+
+  <button class="bookmark-btn" aria-label="Bookmark this recipe">
+    <i class="fas fa-heart outline-icon"></i>
+    <i class="fas fa-heart filled-icon"></i>
+  </button>
+
+  <div class="recipe-card-content">
+    <h3 class="recipe-title">Cauliflower Crust Pizza</h3>
+    <p class="recipe-description">Enjoy a guilt-free pizza with a crispy cauliflower-based crust.</p>
+  </div>
+</a>
+
+<!-- Avocado Chicken Salad -->
+<a href="recipe-avocado-chicken-salad.html" class="recipe-card" data-recipe-id="avocado-chicken-salad" data-recipe-url="recipe-avocado-chicken-salad.html">
+  <img src="https://natashaskitchen.com/wp-content/uploads/2025/03/Avocado-Chicken-Salad-6.jpg" 
+       alt="Avocado Chicken Salad" class="recipe-card-img">
+
+  <button class="bookmark-btn" aria-label="Bookmark this recipe">
+    <i class="fas fa-heart outline-icon"></i>
+    <i class="fas fa-heart filled-icon"></i>
+  </button>
+
+  <div class="recipe-card-content">
+    <h3 class="recipe-title">Avocado Chicken Salad</h3>
+    <p class="recipe-description">A creamy, low-carb chicken salad made with fresh avocado instead of mayonnaise.</p>
+  </div>
+</a>
+
+
+  </div>
+</div>
+
+<!-- Indo Chinese -->
+<div class="category-section">
+  <h2 class="category-title">Indo Chinese</h2>
+  <div class="recipes-list-horizontal">
+
+    <!-- Chilli Paneer -->
+<a href="recipe-chilli-paneer.html" class="recipe-card" data-recipe-id="chilli-paneer" data-recipe-url="recipe-chilli-paneer.html">
+  <img src="https://www.yummytummyaarthi.com/wp-content/uploads/2023/06/chilli-paneer-1.jpeg" 
+       alt="Chilli Paneer" class="recipe-card-img">
+
+  <button class="bookmark-btn" aria-label="Bookmark this recipe">
+    <i class="fas fa-heart outline-icon"></i>
+    <i class="fas fa-heart filled-icon"></i>
+  </button>
+
+  <div class="recipe-card-content">
+    <h3 class="recipe-title">Chilli Paneer</h3>
+    <p class="recipe-description">Fried paneer cubes tossed in a spicy and tangy Indo-Chinese sauce.</p>
+  </div>
+</a>
+
+<!-- Gobi Manchurian -->
+<a href="recipe-gobi-manchurian.html" class="recipe-card" data-recipe-id="gobi-manchurian" data-recipe-url="recipe-gobi-manchurian.html">
+  <img src="https://i0.wp.com/www.chitrasfoodbook.com/wp-content/uploads/2021/04/Streetstylegobimanchurianrecipe.jpg?ssl=1" 
+       alt="Gobi Manchurian" class="recipe-card-img">
+
+  <button class="bookmark-btn" aria-label="Bookmark this recipe">
+    <i class="fas fa-heart outline-icon"></i>
+    <i class="fas fa-heart filled-icon"></i>
+  </button>
+
+  <div class="recipe-card-content">
+    <h3 class="recipe-title">Gobi Manchurian</h3>
+    <p class="recipe-description">Crispy cauliflower florets coated in a spicy, flavorful sauce.</p>
+  </div>
+</a>
+
+<!-- Hakka Noodles -->
+<a href="recipe-hakka-noodles.html" class="recipe-card" data-recipe-id="hakka-noodles" data-recipe-url="recipe-hakka-noodles.html">
+  <img src="https://sinfullyspicy.com/wp-content/uploads/2023/01/2-7.jpg" 
+       alt="Hakka Noodles" class="recipe-card-img">
+
+  <button class="bookmark-btn" aria-label="Bookmark this recipe">
+    <i class="fas fa-heart outline-icon"></i>
+    <i class="fas fa-heart filled-icon"></i>
+  </button>
+
+  <div class="recipe-card-content">
+    <h3 class="recipe-title">Hakka Noodles</h3>
+    <p class="recipe-description">Stir-fried noodles with a mix of vegetables and a savory sauce.</p>
+  </div>
+</a>
+
+<!-- Chicken Manchurian -->
+<a href="recipe-chicken-manchurian.html" class="recipe-card" data-recipe-id="chicken-manchurian" data-recipe-url="recipe-chicken-manchurian.html">
+  <img src="https://orders.popskitchen.in/storage/2024/09/image-148.png" 
+       alt="Chicken Manchurian" class="recipe-card-img">
+
+  <button class="bookmark-btn" aria-label="Bookmark this recipe">
+    <i class="fas fa-heart outline-icon"></i>
+    <i class="fas fa-heart filled-icon"></i>
+  </button>
+
+  <div class="recipe-card-content">
+    <h3 class="recipe-title">Chicken Manchurian</h3>
+    <p class="recipe-description">Spicy, tangy, and slightly sweet chicken dish, a true Indo-Chinese classic.</p>
+  </div>
+</a>
+
+
+  </div>
+</div>
+
+<!-- Japanese -->
+<div class="category-section">
+  <h2 class="category-title">Japanese</h2>
+  <div class="recipes-list-horizontal">
+
+   <!-- Sushi -->
+<a href="recipe-maki-sushi-rolls.html" class="recipe-card" data-recipe-id="maki-sushi-rolls" data-recipe-url="recipe-maki-sushi-rolls.html">
+  <img src="https://www.justonecookbook.com/wp-content/uploads/2024/04/Futomaki-1344-I.jpg" 
+       alt="Maki Sushi Rolls" class="recipe-card-img">
+
+  <button class="bookmark-btn" aria-label="Bookmark this recipe">
+    <i class="fas fa-heart outline-icon"></i>
+    <i class="fas fa-heart filled-icon"></i>
+  </button>
+
+  <div class="recipe-card-content">
+    <h3 class="recipe-title">Maki Sushi Rolls</h3>
+    <p class="recipe-description">A simple guide to making your own delicious sushi rolls at home.</p>
+  </div>
+</a>
+
+<!-- Ramen -->
+<a href="recipe-classic-miso-ramen.html" class="recipe-card" data-recipe-id="classic-miso-ramen" data-recipe-url="recipe-classic-miso-ramen.html">
+  <img src="https://hikarimiso.com/wp-content/uploads/2024/05/Trimmed_03_Miso-Ramen_02_M.jpg.webp" 
+       alt="Classic Miso Ramen" class="recipe-card-img">
+
+  <button class="bookmark-btn" aria-label="Bookmark this recipe">
+    <i class="fas fa-heart outline-icon"></i>
+    <i class="fas fa-heart filled-icon"></i>
+  </button>
+
+  <div class="recipe-card-content">
+    <h3 class="recipe-title">Classic Miso Ramen</h3>
+    <p class="recipe-description">Savory miso broth with bouncy noodles, soft-boiled eggs, and tender pork.</p>
+  </div>
+</a>
+
+<!-- Tempura -->
+<a href="recipe-shrimp-vegetable-tempura.html" class="recipe-card" data-recipe-id="shrimp-vegetable-tempura" data-recipe-url="recipe-shrimp-vegetable-tempura.html">
+  <img src="https://www.everopensauce.com/wp-content/uploads/2021/04/IMG_0294-scaled.jpg" 
+       alt="Shrimp and Vegetable Tempura" class="recipe-card-img">
+
+  <button class="bookmark-btn" aria-label="Bookmark this recipe">
+    <i class="fas fa-heart outline-icon"></i>
+    <i class="fas fa-heart filled-icon"></i>
+  </button>
+
+  <div class="recipe-card-content">
+    <h3 class="recipe-title">Shrimp and Vegetable Tempura</h3>
+    <p class="recipe-description">Light and crispy fried shrimp and vegetables with a delicate dipping sauce.</p>
+  </div>
+</a>
+
+<!-- Gyoza -->
+<a href="recipe-pork-gyoza-dumplings.html" class="recipe-card" data-recipe-id="pork-gyoza-dumplings" data-recipe-url="recipe-pork-gyoza-dumplings.html">
+  <img src="https://int.japanesetaste.com/cdn/shop/articles/how-to-make-gyoza-japanese-dumplings-at-home-japanese-taste.jpg?v=1737982220&width=600" 
+       alt="Pork Gyoza Dumplings" class="recipe-card-img">
+
+  <button class="bookmark-btn" aria-label="Bookmark this recipe">
+    <i class="fas fa-heart outline-icon"></i>
+    <i class="fas fa-heart filled-icon"></i>
+  </button>
+
+  <div class="recipe-card-content">
+    <h3 class="recipe-title">Pork Gyoza Dumplings</h3>
+    <p class="recipe-description">Pan-fried dumplings with a juicy pork and vegetable filling.</p>
+  </div>
+</a>
+
+
+  </div>
+</div>
+
+            <div class="category-section">
+  <h2 class="category-title">Mediterranean</h2>
+  <div class="recipes-list-horizontal">
+    <!-- Classic Greek Salad -->
+<a href="recipe-classic-greek-salad.html" class="recipe-card" data-recipe-id="classic-greek-salad" data-recipe-url="recipe-classic-greek-salad.html">
+  <img src="https://www.happyfoodstube.com/wp-content/uploads/2019/07/greek-salad-image.jpg" 
+       alt="Classic Greek Salad" class="recipe-card-img">
+
+  <button class="bookmark-btn" aria-label="Bookmark this recipe">
+    <i class="fas fa-heart outline-icon"></i>
+    <i class="fas fa-heart filled-icon"></i>
+  </button>
+
+  <div class="recipe-card-content">
+    <h3 class="recipe-title">Classic Greek Salad</h3>
+    <p class="recipe-description">A refreshing salad with crisp vegetables, feta cheese, and olives.</p>
+  </div>
+</a>
+
+<!-- Homemade Tzatziki -->
+<a href="recipe-homemade-tzatziki.html" class="recipe-card" data-recipe-id="homemade-tzatziki" data-recipe-url="recipe-homemade-tzatziki.html">
+  <img src="https://seasonsinthekitchen.com/wp-content/uploads/2024/04/Homemade-tzatziki-1.jpg" 
+       alt="Homemade Tzatziki" class="recipe-card-img">
+
+  <button class="bookmark-btn" aria-label="Bookmark this recipe">
+    <i class="fas fa-heart outline-icon"></i>
+    <i class="fas fa-heart filled-icon"></i>
+  </button>
+
+  <div class="recipe-card-content">
+    <h3 class="recipe-title">Homemade Tzatziki</h3>
+    <p class="recipe-description">A cool and creamy cucumber-yogurt dip, perfect for a meze platter.</p>
+  </div>
+</a>
+
+<!-- Crispy Falafel -->
+<a href="recipe-crispy-falafel.html" class="recipe-card" data-recipe-id="crispy-falafel" data-recipe-url="recipe-crispy-falafel.html">
+  <img src="https://myfoodstory.com/wp-content/uploads/2022/03/Crispy-Falafel-3.jpg" 
+       alt="Crispy Falafel" class="recipe-card-img">
+
+  <button class="bookmark-btn" aria-label="Bookmark this recipe">
+    <i class="fas fa-heart outline-icon"></i>
+    <i class="fas fa-heart filled-icon"></i>
+  </button>
+
+  <div class="recipe-card-content">
+    <h3 class="recipe-title">Crispy Falafel</h3>
+    <p class="recipe-description">Delicious deep-fried balls made from spiced chickpeas or fava beans.</p>
+  </div>
+</a>
+
+<!-- Creamy Roasted Red Pepper Hummus -->
+<a href="recipe-creamy-roasted-red-pepper-hummus.html" class="recipe-card" data-recipe-id="creamy-roasted-red-pepper-hummus" data-recipe-url="recipe-creamy-roasted-red-pepper-hummus.html">
+  <img src="https://mobeforlife.lon1.digitaloceanspaces.com/general/RoastedRedPepperHummus_BlogRecipe_1180x694.jpg" 
+       alt="Creamy Roasted Red Pepper Hummus" class="recipe-card-img">
+
+  <button class="bookmark-btn" aria-label="Bookmark this recipe">
+    <i class="fas fa-heart outline-icon"></i>
+    <i class="fas fa-heart filled-icon"></i>
+  </button>
+
+  <div class="recipe-card-content">
+    <h3 class="recipe-title">Creamy Roasted Red Pepper Hummus</h3>
+    <p class="recipe-description">A smooth and smoky hummus with a vibrant red color and taste.</p>
+  </div>
+</a>
+  </div>
+</div>
+
+<div class="category-section">
+  <h2 class="category-title">Vegan</h2>
+  <div class="recipes-list-horizontal">
+    <!-- Vegan Thai Green Curry -->
+<a href="recipe-vegan-thai-green-curry.html" class="recipe-card" data-recipe-id="vegan-thai-green-curry" data-recipe-url="recipe-vegan-thai-green-curry.html">
+  <img src="https://hot-thai-kitchen.com/wp-content/uploads/2022/09/vegan-green-curry-sq-1.jpg" 
+       alt="Vegan Thai Green Curry" class="recipe-card-img">
+
+  <button class="bookmark-btn" aria-label="Bookmark this recipe">
+    <i class="fas fa-heart outline-icon"></i>
+    <i class="fas fa-heart filled-icon"></i>
+  </button>
+
+  <div class="recipe-card-content">
+    <h3 class="recipe-title">Vegan Thai Green Curry</h3>
+    <p class="recipe-description">A fragrant and creamy curry packed with vegetables and flavor.</p>
+  </div>
+</a>
+
+<!-- Spicy Black Bean Burgers -->
+<a href="recipe-spicy-black-bean-burgers.html" class="recipe-card" data-recipe-id="spicy-black-bean-burgers" data-recipe-url="recipe-spicy-black-bean-burgers.html">
+  <img src="https://tastykitchen.com/wp-content/uploads/2012/03/Tasty-Kitchen-Blog-Spicy-Black-Bean-Burger-11.jpg" 
+       alt="Spicy Black Bean Burgers" class="recipe-card-img">
+
+  <button class="bookmark-btn" aria-label="Bookmark this recipe">
+    <i class="fas fa-heart outline-icon"></i>
+    <i class="fas fa-heart filled-icon"></i>
+  </button>
+
+  <div class="recipe-card-content">
+    <h3 class="recipe-title">Spicy Black Bean Burgers</h3>
+    <p class="recipe-description">Hearty and flavorful black bean patties perfect for grilling.</p>
+  </div>
+</a>
+
+<!-- Lentil and Walnut Tacos -->
+<a href="recipe-lentil-and-walnut-tacos.html" class="recipe-card" data-recipe-id="lentil-and-walnut-tacos" data-recipe-url="recipe-lentil-and-walnut-tacos.html">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr6ddGvRi7idpVcle_Fbk34U_RiX4OQHKjlw&s" 
+       alt="Lentil and Walnut Tacos" class="recipe-card-img">
+
+  <button class="bookmark-btn" aria-label="Bookmark this recipe">
+    <i class="fas fa-heart outline-icon"></i>
+    <i class="fas fa-heart filled-icon"></i>
+  </button>
+
+  <div class="recipe-card-content">
+    <h3 class="recipe-title">Lentil and Walnut Tacos</h3>
+    <p class="recipe-description">A meatless taco filling that's savory, crunchy, and satisfying.</p>
+  </div>
+</a>
+
+<!-- Pasta with Roasted Vegetables -->
+<a href="recipe-pasta-with-roasted-vegetables.html" class="recipe-card" data-recipe-id="pasta-with-roasted-vegetables" data-recipe-url="recipe-pasta-with-roasted-vegetables.html">
+  <img src="https://sanremo.com.au/content/uploads/2020/10/Roast-Veg-Chickpea-Pasta-With-Packaging-Landscape-Low-Res.jpg" 
+       alt="Pasta with Roasted Vegetables" class="recipe-card-img">
+
+  <button class="bookmark-btn" aria-label="Bookmark this recipe">
+    <i class="fas fa-heart outline-icon"></i>
+    <i class="fas fa-heart filled-icon"></i>
+  </button>
+
+  <div class="recipe-card-content">
+    <h3 class="recipe-title">Pasta with Roasted Vegetables</h3>
+    <p class="recipe-description">A simple, rustic pasta dish with seasonal roasted veggies.</p>
+  </div>
+</a>
+
+  </div>
+</div>
+
+<div class="category-section">
+  <h2 class="category-title">Quick & Easy</h2>
+  <div class="recipes-list-horizontal">
+    <!-- One-Pan Lemon Herb Chicken -->
+<a href="recipe-one-pan-lemon-herb-chicken.html" class="recipe-card" data-recipe-id="one-pan-lemon-herb-chicken" data-recipe-url="recipe-one-pan-lemon-herb-chicken.html">
+  <img src="https://enzasquailhollowkitchen.com/wp-content/uploads/2025/04/Lemon-and-Herb-chicken-3.jpg" 
+       alt="One-Pan Lemon Herb Chicken" class="recipe-card-img">
+
+  <button class="bookmark-btn" aria-label="Bookmark this recipe">
+    <i class="fas fa-heart outline-icon"></i>
+    <i class="fas fa-heart filled-icon"></i>
+  </button>
+
+  <div class="recipe-card-content">
+    <h3 class="recipe-title">One-Pan Lemon Herb Chicken</h3>
+    <p class="recipe-description">An easy and flavorful chicken and veggie dish with minimal cleanup.</p>
+  </div>
+</a>
+
+<!-- 20-Minute Shrimp Scampi -->
+<a href="recipe-20-minute-shrimp-scampi.html" class="recipe-card" data-recipe-id="20-minute-shrimp-scampi" data-recipe-url="recipe-20-minute-shrimp-scampi.html">
+  <img src="https://d1yfn1dfres2va.cloudfront.net/009/90/e1/90e1abbf28ca1dae3862d53fa2badcad_social01.jpg" 
+       alt="20-Minute Shrimp Scampi" class="recipe-card-img">
+
+  <button class="bookmark-btn" aria-label="Bookmark this recipe">
+    <i class="fas fa-heart outline-icon"></i>
+    <i class="fas fa-heart filled-icon"></i>
+  </button>
+
+  <div class="recipe-card-content">
+    <h3 class="recipe-title">20-Minute Shrimp Scampi</h3>
+    <p class="recipe-description">A quick and elegant pasta dish with garlic, lemon, and tender shrimp.</p>
+  </div>
+</a>
+
+<!-- Easy Tofu Stir-Fry -->
+<a href="recipe-easy-tofu-stir-fry.html" class="recipe-card" data-recipe-id="easy-tofu-stir-fry" data-recipe-url="recipe-easy-tofu-stir-fry.html">
+  <img src="https://rainbowplantlife.com/wp-content/uploads/2023/01/tofu-stir-fry-with-peppers-skillet.jpg" 
+       alt="Easy Tofu Stir-Fry" class="recipe-card-img">
+
+  <button class="bookmark-btn" aria-label="Bookmark this recipe">
+    <i class="fas fa-heart outline-icon"></i>
+    <i class="fas fa-heart filled-icon"></i>
+  </button>
+
+  <div class="recipe-card-content">
+    <h3 class="recipe-title">Easy Tofu Stir-Fry</h3>
+    <p class="recipe-description">A fast, healthy, and customizable meal ready in minutes.</p>
+  </div>
+</a>
+
+<!-- Avocado Toast with Egg -->
+<a href="recipe-avocado-toast-with-egg.html" class="recipe-card" data-recipe-id="avocado-toast-with-egg" data-recipe-url="recipe-avocado-toast-with-egg.html">
+  <img src="https://www.crunchtimekitchen.com/wp-content/uploads/2018/10/Everything-Avocado-Toast.jpg" 
+       alt="Avocado Toast with Egg" class="recipe-card-img">
+
+  <button class="bookmark-btn" aria-label="Bookmark this recipe">
+    <i class="fas fa-heart outline-icon"></i>
+    <i class="fas fa-heart filled-icon"></i>
+  </button>
+
+  <div class="recipe-card-content">
+    <h3 class="recipe-title">Avocado Toast with Egg</h3>
+    <p class="recipe-description">A classic, quick breakfast or snack that's both healthy and filling.</p>
+  </div>
+</a>
+
+  </div>
+</div>
+
+        </section>
+    </main>
+
+    <section id="my-bookmarks" class="bookmarks-section">
+  <h2 style="text-align: center;">My Bookmarks</h2>
+  <div id="my-bookmarks-list"></div>
+  <p class="empty-state-text">You haven't saved any recipes yet.</p>
+</section>
+
+   <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Brand -->
+                <div class="footer-brand">
+                    <div class="footer-logo-wrapper">
+                        <img src="https://cdn-icons-png.flaticon.com/512/3595/3595458.png" alt="DesiEats Logo" class="logo-img">
+                        <span class="footer-brand-name">DesiEats</span>
+                    </div>
+                    <p class="footer-description">
+                        Your ultimate destination for discovering delicious recipes from around the world. 
+                        Cook with confidence, share with love.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <svg class="social-icon" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <svg class="social-icon" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 6.62 5.367 11.987 11.988 11.987c6.62 0 11.987-5.367 11.987-11.987C24.004 5.367 18.637.001 12.017.001zM8.449 16.988c-1.297 0-2.348-1.051-2.348-2.348s1.051-2.348 2.348-2.348 2.348 1.051 2.348 2.348S9.746 16.988 8.449 16.988zM12.017 16.988c-1.297 0-2.348-1.051-2.348-2.348s1.051-2.348 2.348-2.348 2.348 1.051 2.348 2.348S13.314 16.988 12.017 16.988zM15.585 16.988c-1.297 0-2.348-1.051-2.348-2.348s1.051-2.348 2.348-2.348 2.348 1.051 2.348 2.348S16.882 16.988 15.585 16.988z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="YouTube">
+                            <svg class="social-icon" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <svg class="social-icon" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-column">
+                    <h3 class="footer-column-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html" class="footer-link">Home</a></li>
+                        <li><a href="recipes-all.html" class="footer-link">Recipes</a></li>
+                        <li><a href="recipes-all.html" class="footer-link">Categories</a></li>
+                        <li><a href="blog.html" class="footer-link">Blog</a></li>
+                        <li><a href="about.html" class="footer-link">About</a></li>
+                        <li><a href="contact.html" class="footer-link">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-column-title">Support</h3>
+                    <ul class="footer-links">
+                        <li><a href="contact.html" class="footer-link">Help Center</a></li>
+                        <li><a href="privacy.html" class="footer-link">Privacy Policy</a></li>
+                        <li><a href="privacy.html" class="footer-link">Terms of Service</a></li>
+                        <li><a href="cookie.html" class="footer-link">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-copyright">
+                    © 2025 DesiEats. All Rights Reserved. Made with ❤️ for food lovers everywhere.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="auth.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const sliders = document.querySelectorAll('.recipes-list-horizontal');
+
+        sliders.forEach(slider => {
+            let isDown = false;
+            let startX;
+            let scrollLeft;
+
+            slider.addEventListener('mousedown', (e) => {
+                isDown = true;
+                slider.classList.add('active');
+                startX = e.pageX - slider.offsetLeft;
+                scrollLeft = slider.scrollLeft;
+            });
+            slider.addEventListener('mouseleave', () => {
+                isDown = false;
+                slider.classList.remove('active');
+            });
+            slider.addEventListener('mouseup', () => {
+                isDown = false;
+                slider.classList.remove('active');
+            });
+            slider.addEventListener('mousemove', (e) => {
+                if (!isDown) return;
+                e.preventDefault();
+                const x = e.pageX - slider.offsetLeft;
+                const walk = (x - startX) * 2; // The '2' is a multiplier for speed
+                slider.scrollLeft = scrollLeft - walk;
+            });
+        });
+    });
+    </script>
+
+</body>
+</html>

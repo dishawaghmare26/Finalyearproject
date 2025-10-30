@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10 Time-Saving Kitchen Hacks - DesiEats Blog</title>
+    <meta name="description" content="Discover 10 clever kitchen hacks that will save you time and effort, from quick prep tricks to smart cooking shortcuts.">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      
+      .blog-post-container {
+          max-width: 800px;
+          margin: 0 auto;
+          padding: 2rem 1rem;
+      }
+      .blog-post-container h2 {
+          font-family: 'Raleway', sans-serif;
+          font-size: 2rem;
+          font-weight: 700;
+          color: hsl(var(--card-foreground));
+          margin-top: 2.5rem;
+          margin-bottom: 1rem;
+      }
+      .blog-post-container p, .blog-post-container ul {
+          font-size: 1rem;
+          line-height: 1.6;
+          color: hsl(var(--muted-foreground));
+          margin-bottom: 1.5rem;
+      }
+      .blog-post-container li {
+          margin-bottom: 0.5rem;
+      }
+      .blog-post-featured-image {
+          width: 100%;
+          height: auto;
+          border-radius: 12px;
+          margin-bottom: 2rem;
+      }
+    </style>
+</head>
+<body>
+
+   <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <a href="index.html" class="nav-brand" style="text-decoration: none;">
+                <img src="https://cdn-icons-png.flaticon.com/512/3595/3595458.png" alt="DesiEats Logo" class="logo-img">
+                <span class="brand-name">DesiEats</span>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <div class="nav-links desktop-nav">
+                <a href="index.html" class="nav-link">Home</a>
+                
+                    <a href="recipes-all.html" class="nav-link">Recipes</a>
+                    
+                
+                <div class="nav-item-dropdown">
+                <a href="recipes-all.html" class="nav-link">Categories</a>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-link">By Cuisine</a>
+                        <a href="#" class="dropdown-link">By Course</a>
+                        <a href="#" class="dropdown-link">By Ingredient</a>
+                        <a href="#" class="dropdown-link">Latest Recipes</a>
+                    </div>
+                </div>
+                <a href="blog.html" class="nav-link">Blog</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+
+            <!-- Desktop Actions -->
+            <div class="nav-actions desktop-nav">
+                <div id="guest-actions">
+                    <a href="login.html" class="btn btn-ghost">Login</a>
+                    <a href="signup.html" class="btn btn-outline">Sign Up</a>
+                </div>
+                <div id="user-actions" class="hidden">
+                    <a href="profile.html" class="btn btn-ghost">Profile</a>
+                    <button id="logoutButton" class="btn btn-outline">Logout</button>
+                </div>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <div class="mobile-menu-btn">
+                <button class="btn btn-ghost btn-icon" id="mobileMenuToggle">
+                    <svg class="menu-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+                    <svg class="close-icon hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Mobile Navigation -->
+        <div class="mobile-nav hidden" id="mobileNav">
+            <div class="mobile-nav-content">
+                <a href="index.html" class="mobile-nav-link">Home</a>
+                <a href="recipes-all.html" class="mobile-nav-link">Recipes</a>
+                <a href="recipes-all.html" class="mobile-nav-link">Categories</a>
+                <a href="blog.html" class="mobile-nav-link">Blog</a>
+                <a href="about.html" class="mobile-nav-link">About Us</a>
+                <a href="contact.html" class="mobile-nav-link">Contact</a>
+                <div class="mobile-nav-actions">
+                    <div id="mobile-guest-actions">
+                        <a href="login.html" class="btn btn-ghost btn-full">Login</a>
+                        <a href="signup.html" class="btn btn-outline btn-full">Sign Up</a>
+                    </div>
+                    <div id="mobile-user-actions" class="hidden">
+                        <a href="profile.html" class="btn btn-ghost btn-full">Profile</a>
+                        <button id="mobileLogoutButton" class="btn btn-outline btn-full">Logout</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile-nav hidden" id="mobileNav">
+        <a href="index.html" class="mobile-nav-link">Home</a>
+        <a href="recipes-all.html" class="mobile-nav-link">Recipes</a>
+        <a href="#" class="mobile-nav-link">Categories</a>
+        <a href="blog.html" class="mobile-nav-link">Blog</a>
+        <a href="about.html" class="mobile-nav-link">About Us</a>
+        <a href="contact.html" class="mobile-nav-link">Contact</a>
+    </div>
+
+    <main>
+        <section class="section-spacing">
+            <div class="container blog-post-container">
+                <img src="https://t4.ftcdn.net/jpg/03/32/75/39/360_F_332753934_tBacXEgxnVplFBRyKbCif49jh0Wz89ns.jpg" alt="Kitchen hacks" class="blog-post-featured-image">
+                <h1 class="blog-card-title text-center">10 Time-Saving Kitchen Hacks Every Home Cook Should Know</h1>
+                <p class="text-center" style="font-style: italic; color: hsl(var(--muted-foreground));">By The DesiEats Team | <time datetime="2025-09-23">September 23, 2025</time> | Category: Tips & Tricks</p>
+                <p>In today's fast-paced world, finding time to cook can be a challenge. But with a few clever tricks up your sleeve, you can cut down on prep time and make cooking more efficient. Here are 10 time-saving kitchen hacks that every home cook should know.</p>
+
+                <h2>1. The Blender Trick for Onion & Garlic Paste</h2>
+                <p>Ditch the time-consuming process of finely chopping onions and garlic. Instead, roughly chop them and toss them in a blender with a little water. You'll have a smooth paste in seconds, perfect for gravies and curries.</p>
+
+                <h2>2. Freeze Your Herbs</h2>
+                <p>Don't let fresh herbs go to waste. Chop them finely and place them in an ice cube tray. Pour olive oil or melted butter over them and freeze. Pop a cube into your pan when cooking for instant flavor.</p>
+
+                <h2>3. Use a Ziploc Bag to Crush Spices</h2>
+                <p>Need to crush whole spices or crackers? Place them in a Ziploc bag, seal it, and roll over it with a rolling pin. It's less messy than using a mortar and pestle and gets the job done quickly.</p>
+
+                <h2>4. The Microwave for Soaking Lentils</h2>
+                <p>Forgot to soak your lentils overnight? No problem. Place the lentils in a microwave-safe bowl with three times the amount of water. Microwave for 10-15 minutes, and they'll be soft and ready to cook.</p>
+
+                <h2>5. Batch-Prep Your Ginger-Garlic Paste</h2>
+                <p>Ginger-garlic paste is a staple in many dishes. Make a large batch once a week by blending peeled ginger and garlic with a little oil. Store it in an airtight container in the fridge for easy access.</p>
+
+                <h2>6. The Squeeze Bottle for Pancakes</h2>
+                <p>For mess-free pancakes and waffles, prepare your batter and pour it into a clean, empty squeeze bottle. It makes pouring precise and easy, and you can store any leftover batter in the fridge.</p>
+
+                <h2>7. Peel Potatoes in Seconds</h2>
+                <p>After boiling your potatoes, immediately transfer them to an ice bath. The skin will loosen and become very easy to peel off with just your hands.</p>
+
+                <h2>8. Cut Cherry Tomatoes with a Plate</h2>
+                <p>To slice multiple cherry tomatoes at once, place a handful of them between two small plastic lids or plates. Hold the top plate firmly and slice horizontally through the middle of the tomatoes with a sharp knife.</p>
+
+                <h2>9. Organize Your Spices</h2>
+                <p>An organized spice rack saves a lot of time. Arrange your spices alphabetically or by cuisine so you can find what you need in a flash. You can even use small labeled jars for consistency.</p>
+
+                <h2>10. The Instant Marinade Bag</h2>
+                <p>Instead of marinating in a bowl, use a Ziploc bag. It reduces cleanup and allows the marinade to coat the meat evenly with less liquid. Just toss, seal, and let it sit!</p>
+
+                <p>Incorporating these simple kitchen hacks into your routine will make cooking a more relaxed and enjoyable experience. Happy cooking!</p>
+            </div>
+        </section>
+    </main>
+
+     <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Brand -->
+                <div class="footer-brand">
+                    <div class="footer-logo-wrapper">
+                        <img src="https://cdn-icons-png.flaticon.com/512/3595/3595458.png" alt="DesiEats Logo" class="logo-img">
+                        <span class="footer-brand-name">DesiEats</span>
+                    </div>
+                    <p class="footer-description">
+                        Your ultimate destination for discovering delicious recipes from around the world. 
+                        Cook with confidence, share with love.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <svg class="social-icon" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <svg class="social-icon" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 6.62 5.367 11.987 11.988 11.987c6.62 0 11.987-5.367 11.987-11.987C24.004 5.367 18.637.001 12.017.001zM8.449 16.988c-1.297 0-2.348-1.051-2.348-2.348s1.051-2.348 2.348-2.348 2.348 1.051 2.348 2.348S9.746 16.988 8.449 16.988zM12.017 16.988c-1.297 0-2.348-1.051-2.348-2.348s1.051-2.348 2.348-2.348 2.348 1.051 2.348 2.348S13.314 16.988 12.017 16.988zM15.585 16.988c-1.297 0-2.348-1.051-2.348-2.348s1.051-2.348 2.348-2.348 2.348 1.051 2.348 2.348S16.882 16.988 15.585 16.988z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="YouTube">
+                            <svg class="social-icon" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <svg class="social-icon" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-column">
+                    <h3 class="footer-column-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html" class="footer-link">Home</a></li>
+                        <li><a href="recipes-all.html" class="footer-link">Recipes</a></li>
+                        <li><a href="recipes-all.html" class="footer-link">Categories</a></li>
+                        <li><a href="blog.html" class="footer-link">Blog</a></li>
+                        <li><a href="about.html" class="footer-link">About</a></li>
+                        <li><a href="contact.html" class="footer-link">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-column-title">Support</h3>
+                    <ul class="footer-links">
+                        <li><a href="contact.html" class="footer-link">Help Center</a></li>
+                        <li><a href="privacy.html" class="footer-link">Privacy Policy</a></li>
+                        <li><a href="privacy.html" class="footer-link">Terms of Service</a></li>
+                        <li><a href="cookie.html" class="footer-link">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-copyright">
+                    © 2025 DesiEats. All Rights Reserved. Made with ❤️ for food lovers everywhere.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+    <script src="auth.js"></script>
+</body>
+</html>
