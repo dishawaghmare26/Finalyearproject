@@ -1,5 +1,5 @@
 <?php
-// filepath: api/bookmarks_list.php
+
 require_once "config.php";
 header('Content-Type: application/json');
 
@@ -29,4 +29,5 @@ if ($stmt = $conn->prepare($sql)) {
 }
 $conn->close();
 ?>
+
     
