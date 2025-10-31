@@ -1,5 +1,5 @@
 <?php
-// filepath: c:\Users\Zedex\Desktop\Akshay_excel\1_Style_Caret\Chessfloor\api\signup.php
+
 require_once "config.php";
 
 header('Content-Type: application/json');
@@ -33,4 +33,5 @@ if ($stmt = $conn->prepare($sql)) {
     $stmt->close();
 }
 $conn->close();
+
 ?>
