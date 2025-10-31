@@ -1,5 +1,5 @@
 <?php
-// filepath: c:\Users\Zedex\Desktop\Akshay_excel\1_Style_Caret\Chessfloor\api\update_profile.php
+
 require_once "config.php";
 header('Content-Type: application/json');
 
@@ -36,4 +36,5 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     }
 }
 $conn->close();
+
 ?>
