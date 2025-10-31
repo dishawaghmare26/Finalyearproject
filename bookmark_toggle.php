@@ -1,5 +1,5 @@
 <?php
-// filepath: api/bookmark_toggle.php
+
 require_once "config.php";
 header('Content-Type: application/json');
 
@@ -78,3 +78,4 @@ try {
 
 $conn->close();
 ?>
+
